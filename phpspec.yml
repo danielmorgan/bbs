@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: BulletinBoard
+        psr4_prefix: BulletinBoard
+        src_path: app

@@ -1,0 +1,45 @@
+#create-message {
+    $height: 80px;
+
+    border-bottom: 1px solid $light - 40%;
+    box-shadow: 0 1px 0 $lighter;
+    
+    textarea {
+        height: $height;
+        padding: 30px 15px;
+        border: 0;
+        border-radius: 0;
+        background: $lighter;
+        color: $dark;
+        &:focus {
+            background: $brand-primary + 150%;
+        }
+    }
+
+    button[type="submit"] {
+        width: 100%;
+        height: $height;
+        border: 0;
+        border-radius: 0;
+        border-top: 1px solid $brand-primary + 25%;
+        background: $brand-primary;
+        color: $light;
+        font-weight: 300;
+        font-size: 1.5em;
+        &:hover {
+            background: $brand-primary - 20%;
+        }
+        &:active {
+            outline: 0;
+            border-top: 1px solid $brand-primary - 25%;
+            background: $brand-primary - 20%;
+            span {
+                position: relative;
+                top: 1px;
+            }
+        }
+        &:focus {
+            outline: 0;
+        }
+    }
+}
